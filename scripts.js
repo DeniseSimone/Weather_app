@@ -53,9 +53,8 @@ window.addEventListener('load', () => {
     }
 });
 
-const currentDate = document.getElementsByClassName('currentDate');
-currentDate.textContent = new Date;
-
+const currentDate = document.getElementById('current-date');
+currentDate.innerHTML = new Date().toDateString();
 
 /* 
 1. get api key from 'OpenWeather', do not share it with anyone 
